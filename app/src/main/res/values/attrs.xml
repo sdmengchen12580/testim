@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--水平4个按钮-->
+    <declare-styleable name="TagsLayoutShop">
+        <attr name="tagVerticalSpaces" format="dimension" />
+        <attr name="tagHorizontalSpaces" format="dimension" />
+    </declare-styleable>
+
+</resources>

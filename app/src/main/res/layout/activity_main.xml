@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <com.example.imchat.RecoderViewShopGroup
+                android:id="@+id/show_receiver"
+                android:padding="5dp"
+                android:hint="接收内容展示"
+                android:textSize="16dp"
+                android:textColor="#333333"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/et_input_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:hint="请输入发送内容"
+        android:textSize="16dp"
+        android:textColor="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:text="发送"
+        android:id="@+id/bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_check"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="#333333"
+        android:text="断网=0     !bound=0   断开连接=0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
